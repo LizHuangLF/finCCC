@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    btn默认高度-->
+    <dimen name="ht_btn">48dp</dimen>
+    <dimen name="h_btn">36dp</dimen>
+
+    <!--    APPbar默认高度-->
+    <dimen name="h_toolbar">56dp</dimen>
+    <dimen name="hh_toolbar">112dp</dimen>
+
+    <!--    底部导航栏默认高度-->
+    <dimen name="h_bobar">48dp</dimen>
+    <dimen name="hh_bobar">56dp</dimen>
+
+<!--    悬浮按钮-->
+    <dimen name="s_xbtn">40dp</dimen>
+    <dimen name="m_xbtn">56dp</dimen>
+
+<!--    用户头像-->
+    <dimen name="s_phead">40dp</dimen>
+    <dimen name="m_phead">64dp</dimen>
+    <dimen name="l_phead">80dp</dimen>
+
+
+
+
+
+
+    <!--    小图标区域点击-->
+    <dimen name="s_icon">24dp</dimen>
+    <dimen name="m_icon">48dp</dimen>
+
+<!--    卡片间隔    分隔线留白-->
+    <dimen name="s_card">8dp</dimen>
+    <dimen name="m_card">16dp</dimen>
+    <dimen name="l_card">24dp</dimen>
+    <dimen name="xl_card">32dp</dimen>
+
+
+
+    <!--    listv默认为48dp-->
+    <dimen name="s_listv">48dp</dimen>
+    <dimen name="m_listv">96dp</dimen>
+    <dimen name="l_listv">144dp</dimen>
+    <dimen name="xl_listv">192dp</dimen>
+
+<!--    字体大小-->
+    <dimen name="xs_text">12sp</dimen>
+    <dimen name="s_text">14sp</dimen>
+    <dimen name="m_text">16sp</dimen>
+    <dimen name="l_text">18sp</dimen>
+    <dimen name="xl_text">20sp</dimen>
+    <dimen name="xll_text">22sp</dimen>
+    <dimen name="xlll_text">24sp</dimen>
+
+</resources>

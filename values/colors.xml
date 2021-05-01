@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+<!--    <color name="colorGrey"></color>-->
+
+    <color name="colorSilverWhitte">#f1f0ed</color>
+
+    <color name="colorGhostWhite">#F8F8FF</color>
+    <color name="colorGrey">#808080</color>
+
+    <color name="LightBrown">#fbf0f0</color>
+    <color name="MedBrown">#dfd3d3</color>
+    <color name="MunBrown">#b8b0b0</color>
+    <color name="DeepBrown">#7c7575</color>
+
+    <color name="Deepblue">#065279</color>
+    <color name="LightBlue">#a1afc9</color>
+
+
+
+
+    <color name="LightYellow">#f9f8ed</color>
+    <color name="MedYellow">#f9f4dc</color>
+    <color name="MunYellow">#fff1bc</color>
+    <color name="DeepYellow">#f7e8aa</color>
+
+<!--    <color name="colorJSkyBlue">#c3d7df</color>-->
+    <color name="DeepGreen">#83b271</color>
+    <color name="MunGreen">#abcb89</color>
+    <color name="MedGreen">#d2ea9b</color>
+    <color name="LightGreen">#e7f0d2</color>
+
+
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="brown">#A52A2A</color>
+</resources>
