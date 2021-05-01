@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.InFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_toolbar"
+            android:orientation="horizontal"
+            android:clickable="true">
+            <LinearLayout
+                android:id="@+id/lt_all"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/tv_all"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/xll_text"/>
+                <TextView
+                    android:id="@+id/tv_dall"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="(20)"
+                    android:textSize="@dimen/l_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/ht_btn"
+                android:layout_height="@dimen/ht_btn"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+                <Button
+                    android:id="@+id/btn_in"
+                    android:layout_width="@dimen/h_btn"
+                    android:layout_height="@dimen/h_btn"
+                    android:background="@drawable/shape_btn_in"
+                    android:text="@string/btn_apply"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <LinearLayout style="@style/ltv_style">
+
+                <ImageView
+                    android:id="@+id/iv_upper"
+                    style="@style/tv_style"
+                    android:src="@drawable/ic_in_upper"/>
+
+                <View
+                    android:layout_width="@dimen/xl_card"
+                    android:layout_height="@dimen/xl_card"/>
+
+                <ImageView
+                    android:id="@+id/iv_bottom"
+                    style="@style/tv_style"
+                    android:src="@drawable/ic_in_bo"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/ltv_style">
+                <ImageView
+                    android:id="@+id/iv_suit"
+                    style="@style/tv_style"
+                    android:src="@drawable/ic_in_suit"/>
+
+                <View
+                    android:layout_width="@dimen/xl_card"
+                    android:layout_height="@dimen/xl_card"/>
+
+                <ImageView
+                    android:id="@+id/iv_footgear"
+                    style="@style/tv_style"
+                    android:src="@drawable/ic_in_footgear"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/ltv_style">
+                <ImageView
+                    android:id="@+id/iv_bagcap"
+                    style="@style/tv_style"
+                    android:src="@drawable/ic_in_bagcap"/>
+
+                <View
+                    android:layout_width="@dimen/xl_card"
+                    android:layout_height="@dimen/xl_card"/>
+
+                <TextView
+                    android:id="@+id/iv_other"
+                    style="@style/tv_style"
+                    android:drawableTop="@drawable/ic_in_other"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
