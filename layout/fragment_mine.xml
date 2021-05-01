@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hh_toolbar"
+            android:orientation="horizontal"
+            android:padding="@dimen/s_card">
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="@dimen/l_phead"
+                android:layout_height="@dimen/l_phead"
+                android:src="@drawable/ic_noimg"/>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="用户名允许八个字"
+                android:textColor="@color/colorGrey"
+                android:textSize="20sp"
+                android:layout_alignTop="@id/iv_photo"
+                android:layout_toEndOf="@id/iv_photo"/>
+
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/tv_name"
+                android:layout_toEndOf="@id/iv_photo"/>
+
+            <TextView
+                android:id="@+id/tv_friend"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:text="好友 >"
+                android:layout_below="@id/tv_view"
+                android:layout_toRightOf="@id/iv_photo"
+                android:gravity="center"  />
+
+            <TextView
+                android:id="@+id/tv_toolic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_mine_accman"
+                android:layout_toEndOf="@id/tv_name"/>
+            <TextView
+                android:id="@+id/tv_tools"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/tv_setting"
+                android:layout_below="@id/tv_toolic"
+                android:layout_toEndOf="@id/tv_name"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Viewv" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hh_toolbar"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/s_card"
+            android:background="@drawable/shape_cardd">
+
+            <TextView style="@style/item_tv"
+                android:id="@+id/tv_data"
+                android:drawableTop="@drawable/ic_mine_analyse"
+                android:text="@string/tv_analyse"/>
+            <TextView style="@style/item_tv"
+                android:id="@+id/tv_shoper"
+                android:drawableTop="@drawable/ic_mine_shoper"
+                android:text="@string/tv_shoper"/>
+            <TextView style="@style/item_tv"
+                android:id="@+id/tv_closet"
+                android:drawableTop="@drawable/ic_mine_data"
+                android:text="@string/tv_closetManager"/>
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_mine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+        <!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@drawable/shape_cardd">-->
+
+<!--&lt;!&ndash;            <TableRow android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+<!--&lt;!&ndash;                <TextView android:layout_width="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:drawableTop="@color/colorQOXPurple"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                &ndash;&gt;-->
+<!--&lt;!&ndash;            </TableRow>&ndash;&gt;-->
+
+<!--            <TableLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="20dp">-->
+
+<!--&lt;!&ndash;                <TableRow android:id="@+id/tr_data"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/TableRow">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableIcon"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@mipmap/ic_mine_data" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableText"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/tv_data" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView style="@style/TableImage" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </TableRow>&ndash;&gt;-->
+<!--&lt;!&ndash;                <View style="@style/View" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TableRow android:id="@+id/tr_prefer"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/TableRow">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableIcon"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@mipmap/ic_mine_perefer" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableText"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/tv_prefer" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView style="@style/TableImage" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </TableRow>&ndash;&gt;-->
+<!--&lt;!&ndash;                <View style="@style/View" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TableRow android:id="@+id/tr_analyse"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/TableRow">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableIcon"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@mipmap/ic_mine_analyse" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableText"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/tv_analyse" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView style="@style/TableImage" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </TableRow>&ndash;&gt;-->
+<!--&lt;!&ndash;                <View style="@style/View" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TableRow android:id="@+id/tr_shoper"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/TableRow">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableIcon"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@mipmap/ic_mine_shoper" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableText"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/tv_shoper" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView style="@style/TableImage" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </TableRow>&ndash;&gt;-->
+<!--&lt;!&ndash;                <View style="@style/View" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TableRow android:id="@+id/tr_accountMan"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/TableRow">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableIcon"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@mipmap/ic_mine_accountman" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableText"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/tv_accountManager" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView style="@style/TableImage" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </TableRow>&ndash;&gt;-->
+<!--&lt;!&ndash;                <View style="@style/View" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TableRow android:id="@+id/tr_setting"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/TableRow">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableIcon"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@mipmap/ic_mine_setting" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/tv_setting"&ndash;&gt;-->
+<!--&lt;!&ndash;                        style="@style/TableText"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/tv_setting" />&ndash;&gt;-->
+<!--&lt;!&ndash;                    <ImageView style="@style/TableImage" />&ndash;&gt;-->
+<!--&lt;!&ndash;                </TableRow>&ndash;&gt;-->
+<!--&lt;!&ndash;                <View style="@style/View" />&ndash;&gt;-->
+
+<!--            </TableLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center">-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="350dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="偏好风格"-->
+<!--                    android:textSize="25sp"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/d_right"/>-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/colorMoPurple" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="350dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="单品分析"-->
+<!--                    android:textSize="25sp"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@mipmap/d_right"/>-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/colorMoPurple" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="350dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="购物清单"-->
+<!--                    android:textSize="25sp"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@mipmap/d_right"/>-->
+<!--            </LinearLayout>-->
+<!--            <View-->
+<!--                android:layout_height="2dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/colorMoPurple" />-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+</FrameLayout>

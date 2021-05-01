@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp">
+
+    <ImageView android:id="@+id/l_iv"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="10dp"/>
+
+    <ImageView android:id="@+id/liv_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_noimg"
+        android:layout_toEndOf="@id/l_iv"/>
+
+    <TextView android:id="@+id/ltv_name"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="用户名是八个字吧"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/liv_head"/>
+
+    <ImageView android:id="@+id/liv_heart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/icb_modelc"
+        android:layout_toEndOf="@id/ltv_name"/>
+
+    <TextView android:id="@+id/ltv_heart_number"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/liv_heart"/>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/ltv_name"
+        android:layout_toEndOf="@id/l_iv"
+        android:background="@color/colorGhostWhite"/>
+
+    <TextView android:id="@+id/ltv_detail"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ltv_name"
+        android:layout_toEndOf="@id/l_iv"/>
+
+</RelativeLayout>

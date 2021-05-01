@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ModelFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="@dimen/h_toolbar"
+        android:gravity="center">
+        <TextView
+            android:layout_width="200dp"
+            android:id="@+id/tv_ins"
+            android:text="灵感"
+            android:gravity="center"
+            android:textSize="@dimen/xll_text"
+            android:textColor="@drawable/selector_rbt"/>
+        <View android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:background="@color/colorGhostWhite"/>
+        <TextView
+            android:id="@+id/tv_heart"
+            android:text="收藏"
+            android:gravity="center"
+            android:textSize="@dimen/xll_text"
+            android:textColor="@drawable/selector_rbt"/>
+    </TableRow>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/h_toolbar" />
+
+
+</FrameLayout>

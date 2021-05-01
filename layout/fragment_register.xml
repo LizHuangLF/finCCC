@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="56dp"
+        android:id="@+id/ll_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/registre"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView   style="@style/lore_tv"
+                android:text="输入密码"/>
+
+            <EditText style="@style/lore_et"
+                android:id="@+id/et_pwd"
+                android:hint="8-10位大小写字母和数字组成"/>
+
+            <TextView style="@style/lore_tvre"
+                android:id="@+id/tv_pwdrepose"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView   style="@style/lore_tv"
+                android:text="确认密码"/>
+
+            <EditText style="@style/lore_et"
+                android:id="@+id/et_repwd"
+                android:hint="与输入密码一致" />
+
+            <TextView style="@style/lore_tvre"
+                android:id="@+id/tv_repwdrepose"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@null"
+                android:background="@drawable/selector_ckb_go"
+                android:checked="false"/>
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/checkbox"
+                android:text="勾选即代表同意相关协议"
+                android:textSize="14sp"
+                android:textColor="@color/colorGhostWhite"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/lore_btn"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_register" />
+    </LinearLayout>
+
+</FrameLayout>

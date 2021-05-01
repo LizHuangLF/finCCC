@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout   android:id="@+id/ll_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView   style="@style/lore_tv"
+                android:text="输入手机号或邮箱"/>
+
+            <EditText style="@style/lore_et"
+                android:id="@+id/et_id"/>
+
+            <TextView   style="@style/lore_tvre"
+                android:id="@+id/tv_idrepose"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView   style="@style/lore_tv"
+                android:text="输入密码"/>
+
+            <EditText   style="@style/lore_et"
+                android:id="@+id/et_pwd"/>
+
+            <TextView style="@style/lore_tvre"
+                android:id="@+id/tv_pwdrepose"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_lobycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证登录"
+                android:textColor="@color/colorGhostWhite"
+                android:textSize="16sp"/>
+            <View style="@style/line"
+                android:layout_margin="24dp" />
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户注册"
+                android:textSize="16sp"
+                android:textColor="@color/colorGhostWhite"/>
+
+        </LinearLayout>
+
+
+        <Button style="@style/lore_btn"
+            android:id="@+id/btn_login"
+            android:text="@string/btn_login"/>
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:gravity="center">-->
+        <!--            <ImageView-->
+        <!--                android:id="@+id/iv_qq"-->
+        <!--                android:layout_width="60dp"-->
+        <!--                android:layout_height="60dp"-->
+        <!--                android:layout_marginEnd="50dp"-->
+        <!--                android:src="@drawable/left"-->
+        <!--                android:background="@color/colorMilkWhite"/>-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_qq"-->
+        <!--                android:layout_width="60dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginEnd="50dp"-->
+        <!--                android:layout_below="@+id/iv_qq"-->
+        <!--                android:background="@color/colorSilverWhitte"-->
+        <!--                android:text="QQ登录"-->
+        <!--                android:gravity="center"/>-->
+        <!--            <ImageView-->
+        <!--                android:id="@+id/vx"-->
+        <!--                android:layout_width="60dp"-->
+        <!--                android:layout_height="60dp"-->
+        <!--                android:src="@drawable/left"-->
+        <!--                android:layout_toEndOf="@id/iv_qq"-->
+        <!--                android:background="@color/colorMilkWhite"/>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="60dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/vx"-->
+        <!--                android:layout_toEndOf="@id/tv_qq"-->
+        <!--                android:background="@color/colorSilverWhitte"-->
+        <!--                android:text="微信登录"-->
+        <!--                android:gravity="center"/>-->
+
+        <!--        </RelativeLayout>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:id="@+id/tv_show"/>-->
+    </LinearLayout>
+
+</FrameLayout>
